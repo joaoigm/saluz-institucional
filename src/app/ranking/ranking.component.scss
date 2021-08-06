@@ -1,0 +1,81 @@
+.page {
+  padding: 1.5%;
+
+  .title {
+    @media (max-width: 470px) {
+      font-size: 2rem;
+    }
+    font-size: 3.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-weight: 300;
+    text-shadow: 0.04em 0.08em #fff82b;
+    margin-top: 5vh;
+
+
+    img {
+      width: 10vh;
+      height: 10vh;
+      margin-left: 1.2vw;
+    }
+  }
+
+  .chart-section {
+    margin-top: 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  ul {
+    @media(max-width: 470px) {
+      margin-top: 4vh;
+    }
+    margin-top: 10vh;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-start;
+    @media(min-width: 470px) {
+      margin-left: 3%;
+    }
+    li {
+      @media(max-width: 470px) {
+        font-size: 1.4rem
+      }
+      font-size: 2rem;
+    }
+  }
+
+  .time-circle {
+    height: 5vh;
+    width: 5vh;
+    border-radius: 50%;
+    display: inline-block;
+    border: solid #051afc 0.5vh
+  }
+
+  div.flex-center.table-responsive {
+    padding: 3%;
+    table {
+      thead {
+        tr th {
+          vertical-align: middle;
+          font-size: 1rem;
+          img {
+            height: 4vh;
+            width: 4vh;
+          }
+        }
+      }
+      tbody {
+        tr td {
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+}
