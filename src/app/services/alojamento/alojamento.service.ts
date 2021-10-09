@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { Alojamento } from 'src/app/types/types';
 
 @Injectable({
     providedIn: 'root'
@@ -9,32 +10,32 @@ export class AlojamentoService {
         //
     }
 
-    getAlojamentoFeminino(): any {
+    getAlojamentoFeminino(): Alojamento {
         return ALOJAMENTO_FEMININO_MOCK;
     }
 }
 
-const ALOJAMENTO_FEMININO_MOCK = {
+const ALOJAMENTO_FEMININO_MOCK: Alojamento = {
     vagasDisponiveis: 17,
     camaA: [
-        { cama: 1, disponivel: true },
-        { cama: 2, disponivel: true },
-        { cama: 3, disponivel: true },
-        { cama: 4, disponivel: true },
-        { cama: 5, disponivel: true },
-        { cama: 6, disponivel: true },
-        { cama: 7, disponivel: true },
-        { cama: 8, disponivel: true },
-        { cama: 9, disponivel: true },
+        { id: 1, disponivel: true },
+        { id: 2, disponivel: true },
+        { id: 3, disponivel: true },
+        { id: 4, disponivel: true },
+        { id: 5, disponivel: true },
+        { id: 6, disponivel: true },
+        { id: 7, disponivel: true },
+        { id: 8, disponivel: true },
+        { id: 9, disponivel: true }
     ],
     camaB: [
-        { cama: 1, disponivel: true },
-        { cama: 2, disponivel: true },
-        { cama: 3, disponivel: true },
-        { cama: 4, disponivel: true },
-        { cama: 5, disponivel: true },
-        { cama: 6, disponivel: true },
-        { cama: 7, disponivel: true },
-        { cama: 8, disponivel: true },
+        { id: 1, disponivel: true },
+        { id: 2, disponivel: true },
+        { id: 3, disponivel: true },
+        { id: 4, disponivel: true },
+        { id: 5, disponivel: true },
+        { id: 6, disponivel: true },
+        { id: 7, disponivel: true },
+        { id: 8, disponivel: true },
     ]
 };

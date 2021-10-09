@@ -1,3 +1,4 @@
+import { NgxMaskModule } from 'ngx-mask';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -16,6 +17,7 @@ import { HomeComponent } from './home/home.component';
         NgbCarouselModule,
         NgbModule,
         AppRoutingModule,
+        NgxMaskModule.forRoot()
     ],
     providers: [],
     bootstrap: [AppComponent],

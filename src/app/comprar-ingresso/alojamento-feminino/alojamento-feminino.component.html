@@ -1,1 +1,50 @@
-<p>alojamento-feminino works!</p>
+<form class="row g3">
+  <div class="checkout">
+    <div>
+      <h2>
+        Camas A
+      </h2>
+      <small>Camas que ficam na parte de baixo</small>
+    </div>
+    <div *ngIf="alojamento" class="camas">
+      <div class="form-check form-check-inline" *ngFor="let cama of alojamento.camaA">
+        <input name="camaB" type="radio" class="form-check-input" [disabled]="!cama.disponivel">
+        <label class="form-check-label">{{cama.id}}</label>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="checkout">
+    <div>
+      <h2>
+        Camas B
+      </h2>
+      <small>Camas que ficam na parte de cima</small>
+    </div>
+    <div *ngIf="alojamento" class="camas">
+      <div class="form-check form-check-inline" *ngFor="let cama of alojamento.camaB">
+        <input name="camaB" type="radio" class="form-check-input" [disabled]="!cama.disponivel">
+        <label class="form-check-label">{{cama.id}}</label>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="col-12">
+    <label class="form-label">Nome</label>
+    <input class="form-control" type="text">
+  </div>
+  <div class="col-6 mb-5">
+    <label class="form-label">Email</label>
+    <input class="form-control" type="text">
+  </div>
+
+  <div class="col-6 mb-5">
+    <label class="form-label">Celular</label>
+    <input class="form-control" type="text" mask="(00) 00000-0000">
+  </div>
+  <button type="submit" class="btn btn-success">Inscrever</button>
+</form>
